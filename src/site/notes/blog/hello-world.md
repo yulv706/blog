@@ -1,10 +1,5 @@
 ---
-tags:
-  - gardenEntry
-dg-publish: true
-dg-home: true
-permalink: /blog/hello-world/
-dgPassFrontmatter: true
+{"dg-publish":true,"dg-home":true,"permalink":"/blog/hello-world/","tags":["gardenEntry"],"dgPassFrontmatter":true}
 ---
 
 hello world
