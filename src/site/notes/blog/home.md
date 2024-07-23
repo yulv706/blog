@@ -2,7 +2,6 @@
 {"dg-publish":true,"dg-home":true,"permalink":"/blog/home/","tags":["gardenEntry"],"dgPassFrontmatter":true}
 ---
 
-
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -13,8 +12,8 @@
             text-align: center;
             margin-top: 50px;
         }
-        .image {
-            max-width: 300px;
+        .logo {
+            max-width: 100px;
             height: auto;
         }
         .text {
@@ -26,10 +25,8 @@
 <body>
     <div class="container">
         <a href="https://github.com/yulv706/blog" target="_blank">
-            <img src="https://github.com/yulv706/blog/blob/main/logo.jpg" alt="Kongyu Blog" class="image">
-            <div class="text">Kongyu BLOG</div>
+            <img src="https://github.com/yulv706/blog/blob/main/logo_transparent.png?raw=true" alt="Kongyu Blog" class="logo">
         </a>
     </div>
 </body>
 </html>
-
