@@ -15,8 +15,3 @@
 所以现在这个花园先让他闲置吧
 
 
-受不了，这个digital garden 双链怎么还有bug，受不了
-
-[[blog/测试\|测试]]
-
-[[blog/TEST\|TEST]]
