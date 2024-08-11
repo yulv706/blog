@@ -81,7 +81,7 @@
 
 
 [[blog/安全/靶场/墨者_XFF注入\|墨者_XFF注入]]
-
+[[blog/安全/靶场/CTFshow_SQL注入_无过滤注入\|CTFshow_SQL注入_无过滤注入]]
 # SQL盲注
 
 ## 布尔盲注报错
