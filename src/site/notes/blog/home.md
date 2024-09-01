@@ -4,57 +4,13 @@
 
 
 
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>有趣的动态背景</title>
-    <style>
-        body {
-            margin: 0;
-            overflow: hidden;
-        }
 
-        .background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background: linear-gradient(120deg, #f6d365, #fda085);
-            background-size: 200% 200%;
-            animation: gradientAnimation 10s ease infinite;
-        }
+这是主页，好吧，现在还是空的
 
-        @keyframes gradientAnimation {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        }
+目前还不知道这里放些什么好
 
-        .center-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 3rem;
-            color: #fff;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-            font-family: 'Arial', sans-serif;
-        }
-    </style>
-</head>
-<body>
-    <div class="background"></div>
-    <div class="center-text">欢迎来到我的博客!</div>
-</body>
-</html>
+这个花园初步计划打算用来上传我学习过程中整理的笔记。
+但是现在由于各种原因，感觉弄出来的效果没有达到我的预期
+等我在学习学习如何整理笔记，等我有一套成熟的笔记系统的时候再进行更新吧
 
+所以现在这个主页先让他闲置吧
