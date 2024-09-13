@@ -110,7 +110,9 @@ echo "<h2 align=center>没有找到和".htmlspecialchars($str)."相关的结果.
 ![Pasted image 20240826201442.png](/img/user/picture/Pasted%20image%2020240826201442.png)
 发现好像啥也没少
 用之前的payload测试一下：
+```
 `"><script>alert("xss");</script>`
+```
 ![Pasted image 20240826201714.png](/img/user/picture/Pasted%20image%2020240826201714.png)
 ```
 "onmouseover='alert(1)'
@@ -118,8 +120,6 @@ echo "<h2 align=center>没有找到和".htmlspecialchars($str)."相关的结果.
 ![Pasted image 20240826201759.png](/img/user/picture/Pasted%20image%2020240826201759.png)
 这一题可以用`javascript`伪协议来实现
 payload:
-```
-"><a href="javascript:alert(`xss`);">xss</a>
-```
+
 
 
