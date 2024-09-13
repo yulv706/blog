@@ -45,13 +45,15 @@ echo "<h2 align=center>没有找到和".htmlspecialchars($str)."相关的结果.
 <input name=keyword  value="'.$str.'">
 ```
 
-> [!NOTE] 注意
-> `htmlspecialchars($str)` 是 PHP 中用来将字符串中的特殊字符转换为 HTML 实体的函数。
-> - `&` 转换为 `&amp;`
->- `<` 转换为 `&lt;`
->- `>` 转换为 `&gt;`
->- `"` 转换为 `&quot;`
->- `'` 转换为 `&#039;`（这是在双引号内使用时）
+
+ `htmlspecialchars($str)` 是 PHP 中用来将字符串中的特殊字符转换为 HTML 实体的函数。
+ - `&` 转换为 `&amp;`
+- `<` 转换为 `&lt;`
+- `>` 转换为 `&gt;`
+- `"` 转换为 `&quot;`
+- `'` 转换为 `&#039;`（这是在双引号内使用时）
+
+
 
 所以我们可以尝试将输入框中的内容进行闭合
 ```html
