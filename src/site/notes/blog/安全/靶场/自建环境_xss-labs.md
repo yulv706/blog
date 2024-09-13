@@ -100,7 +100,7 @@ echo "<h2 align=center>没有找到和".htmlspecialchars($str)."相关的结果.
 "onmouseover='alert(1)'
 ```
 
-# Level 5(绕过检测`<script`和`on`事件)
+# Level 5
 ![Pasted image 20240826201331.png](/img/user/picture/Pasted%20image%2020240826201331.png)
 测试payload看一下：
 ```
