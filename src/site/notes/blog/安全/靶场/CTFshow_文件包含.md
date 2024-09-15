@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"title":"CTFshow_文件包含","dg-path":"安全/靶场/CTFshow_文件包含.md","permalink":"/安全/靶场/CTFshow_文件包含/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-path":"安全/靶场/CTFshow_文件包含.md","permalink":"/安全/靶场/CTFshow_文件包含/","title":"CTFshow_文件包含"}
 ---
 
 # WEB 78

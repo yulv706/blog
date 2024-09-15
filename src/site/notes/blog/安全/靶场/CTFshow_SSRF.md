@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"title":"CTFshow_SSRF","dg-path":"安全/靶场/CTFshow_SSRF.md","permalink":"/安全/靶场/CTFshow_SSRF/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-path":"安全/靶场/CTFshow_SSRF.md","permalink":"/安全/靶场/CTFshow_SSRF/","title":"CTFshow_SSRF"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"title":"BUU_[极客大挑战 2019]Upload 1","dg-path":"安全/靶场/BUU_[极客大挑战 2019]Upload 1.md","permalink":"/安全/靶场/BUU_[极客大挑战 2019]Upload 1/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-path":"安全/靶场/BUU_[极客大挑战 2019]Upload 1.md","permalink":"/安全/靶场/BUU_[极客大挑战 2019]Upload 1/","title":"BUU_[极客大挑战 2019]Upload 1"}
 ---
 
 # 前期测试

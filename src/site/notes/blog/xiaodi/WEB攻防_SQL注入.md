@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"title":"WEB攻防_SQL注入","dg-path":"xiaodi/WEB攻防_SQL注入.md","permalink":"/xiaodi/WEB攻防_SQL注入/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-path":"xiaodi/WEB攻防_SQL注入.md","permalink":"/xiaodi/WEB攻防_SQL注入/","title":"WEB攻防_SQL注入"}
 ---
 
 # 数据库框架

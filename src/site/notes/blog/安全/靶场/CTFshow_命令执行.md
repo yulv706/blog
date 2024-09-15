@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"title":"CTFshow_命令执行","dg-path":"安全/靶场/CTFshow_命令执行.md","permalink":"/安全/靶场/CTFshow_命令执行/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-path":"安全/靶场/CTFshow_命令执行.md","permalink":"/安全/靶场/CTFshow_命令执行/","title":"CTFshow_命令执行"}
 ---
 
 # web29

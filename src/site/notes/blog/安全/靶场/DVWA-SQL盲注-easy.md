@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"title":null,"dg-path":"安全/靶场/DVWA-SQL盲注-easy.md","permalink":"/安全/靶场/DVWA-SQL盲注-easy/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-path":"安全/靶场/DVWA-SQL盲注-easy.md","permalink":"/安全/靶场/DVWA-SQL盲注-easy/"}
 ---
 
 

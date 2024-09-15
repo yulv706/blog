@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"title":"CTFshow_SQL注入_无过滤注入","dg-path":"安全/靶场/CTFshow_SQL注入_无过滤注入.md","permalink":"/安全/靶场/CTFshow_SQL注入_无过滤注入/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-path":"安全/靶场/CTFshow_SQL注入_无过滤注入.md","permalink":"/安全/靶场/CTFshow_SQL注入_无过滤注入/","title":"CTFshow_SQL注入_无过滤注入"}
 ---
 
 # WEB171 无过滤注入1
