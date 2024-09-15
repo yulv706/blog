@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/工具/nmap.md","permalink":"///nmap/","title":"nmap"}
+{"dg-publish":true,"dg-path":"安全/工具/nmap.md","permalink":"/安全/工具/nmap/","title":"nmap"}
 ---
 
 # 主机发现
