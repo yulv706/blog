@@ -26,3 +26,4 @@ THM也就是tryhackme，一个很不错的安全学习平台，由于我学艺�
 
 xiaodi也就是xiaodi。。。他讲授的内容我认为是比较偏向于实战，也会涉及一些CTF的知识点，还是很不错的
 
+![logo.jpg](/img/user/picture/logo.jpg)
