@@ -26,6 +26,22 @@ THM也就是tryhackme，一个很不错的安全学习平台，由于我学艺�
 xiaodi也就是xiaodi。。。他讲授的内容我认为是比较偏向于实战，也会涉及一些CTF的知识点，还是很不错的
 
 
+**最近在学**：
++ php反序列化（ctfshow靶场练习）
+
+
+**近期更新**：
++ doing(指笔记未更新完)
+	+ xiaodi--[[blog/xiaodi/WEB攻防_PHP反序列化\|WEB攻防_PHP反序列化]]
+
+
+
++ done
+	+ 靶场--[[blog/安全/靶场/CTFshow_反序列化1\|CTFshow_反序列化1]]
+
+
+
+
 
 
 ![logo.jpg](/img/user/picture/logo.jpg)
