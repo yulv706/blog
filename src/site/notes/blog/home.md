@@ -32,12 +32,12 @@ xiaodi也就是xiaodi。。。他讲授的内容我认为是比较偏向于实�
 
 **近期更新**：
 + doing(指笔记未更新完)
-	+ xiaodi--[[blog/xiaodi/WEB攻防_PHP反序列化\|WEB攻防_PHP反序列化]]
+	+ xiaodi--[[blog/xiaodi/WEB攻防_PHP反序列化\|WEB攻防_PHP反序列化]] (2024年10月8日)
 
 
 
 + done
-	+ 靶场--[[blog/安全/靶场/CTFshow_反序列化1\|CTFshow_反序列化1]]
+	+ 靶场--[[blog/安全/靶场/CTFshow_反序列化1\|CTFshow_反序列化1]]  (2024年10月8日)
 
 
 
