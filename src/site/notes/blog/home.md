@@ -39,6 +39,8 @@ xiaodi也就是xiaodi。。。他讲授的内容我认为是比较偏向于实�
 + done
 	+ 靶场--[[blog/安全/靶场/CTFshow_反序列化1\|CTFshow_反序列化1]]  (2024年10月8日)
 	+ 靶场--[[blog/安全/靶场/BUU_[极客大挑战 2019]PHP1\|BUU_[极客大挑战 2019]PHP1]] (2024年10月8日)
+	+ 靶场--[[blog/安全/靶场/CTFshow_月饼杯_web1_此夜圆\|CTFshow_月饼杯_web1_此夜圆]] (2024年10月10日)
+	+ 靶场--[[blog/安全/靶场/BUU_[安洵杯 2019]easy_serialize_php 1\|BUU_[安洵杯 2019]easy_serialize_php 1]] (2024年10月10日)
 
 
 
