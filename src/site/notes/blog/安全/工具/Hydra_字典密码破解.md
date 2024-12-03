@@ -22,7 +22,7 @@ hydra -l mark -P /usr/share/wordlists/rockyou.txt ftp://10.10.12.199
 hydra -l frank -P /usr/share/wordlists/rockyou.txt 10.10.12.199 ssh
 ```
 
-HNUCTF{OSINT_leads_to_flag}
+`HNUCTF{OSINT_leads_to_flag}`
 # 额外参数
 
 + `-s PORT` 为相关服务指定非默认端口。
