@@ -6,12 +6,13 @@
 
 
 **最近在学**：
-+ 科目三（2024年12月26日）
 + php反序列化（ctfshow靶场练习）
++ 靶场练习 [[blog/安全/靶机/vulnhub_W1R3S 1.0.1\|vulnhub_W1R3S 1.0.1]]
++ 读书
 
 
 **近期更新**：
 + doing(指笔记未更新完)
-	+ xiaodi--[[blog/xiaodi/WEB攻防_PHP反序列化\|WEB攻防_PHP反序列化]] (2024年12月21日)
-	+ THM--[adventofcyber2024](https://tryhackme.com/r/room/adventofcyber2024) (没有笔记，挺好玩的，难度也挺低，建议可以做做)
+	+ [[blog/formyself/心里解剖\|心里解剖]] （2025.1.9）
+
 
