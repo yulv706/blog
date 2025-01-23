@@ -9,9 +9,9 @@
 + php反序列化（ctfshow靶场练习）
 + 靶场练习 [[blog/安全/靶机/vulnhub_SickOS1.1\|vulnhub_SickOS1.1]]（25.1.21）
 + 读书 《被讨厌的勇气》（看了一下发现看不懂，可能因为放假使我没办法静下心来，打算找点别的书看看）
-+ 明天（1.22）号炉石迷你包上线，我明天要玩一天
-+ （这就是新版本吗，虫子玩爽了）
-  ![Pasted image 20250122183259.png](/img/user/picture/Pasted%20image%2020250122183259.png)
+
+
+  
 
 
 [[blog/formyself/心里解剖\|心里解剖]]
