@@ -7,11 +7,10 @@
 
 **最近在学**：
 + php反序列化（ctfshow靶场练习）
-+ 靶场练习 [[blog/安全/靶机/vulnhub_Prime1\|vulnhub_Prime1]]（25.1.24）
++ 靶场练习 [[blog/安全/靶机/hackmyvm_buster\|hackmyvm_buster]]（25.1.25）//再一次认识到自己的菜
 + 读书《月亮与六便士》（重温经典了属于是）
 
 
-  
 
 
 [[blog/formyself/心里解剖\|心里解剖]]
