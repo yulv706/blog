@@ -6,7 +6,7 @@
 
 
 **最近在学**：
-+ php反序列化（ctfshow靶场练习）
++ 靶场练习 [[blog/安全/靶机/hackmyvm_p4l4nc4\|hackmyvm_p4l4nc4]]（25.1.28）
 + 靶场练习 [[blog/安全/靶机/hackmyvm_buster\|hackmyvm_buster]]（25.1.25）//再一次认识到自己的菜
 + 读书《月亮与六便士》（重温经典了属于是）
 
