@@ -82,8 +82,28 @@ sudo /sbin/service sshd restart
 ![Pasted image 20250131131945.png](/img/user/picture/Pasted%20image%2020250131131945.png)
 
 
+# 提权-补
 
 
+还有一种方法，可以让我们获取flag但是没法获取root全部权限
+
+首先要知道：
+**SSH Banner 机制**：在 `sshd_config` 中可以指定一个 `Banner` 文件路径。客户端连接时，SSH 守护进程会以 root 权限读取该文件并把内容展示给客户端。
+
+修改其中的：
+![cc7cb2c250e49c631bab9e3289cc858.png](/img/user/picture/cc7cb2c250e49c631bab9e3289cc858.png)
+```txt
+Banner /root/root.txt
+```
 
 
+重载：
+```shell
+sudo /sbin/service sshd restart
+```
+
+
+之后再ssh连接即可
+（不需要连上去）
+![Pasted image 20250131160350.png](/img/user/picture/Pasted%20image%2020250131160350.png)
 
