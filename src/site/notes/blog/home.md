@@ -6,8 +6,9 @@
 
 
 **最近在学**：
++ 靶场练习[[blog/安全/靶机/hackmyvm_up\|hackmyvm_up]](25.1.31)
 + 靶场练习[[blog/安全/靶机/hackmyvm_jan\|hackmyvm_jan]] (25.1.31)
-+ 靶场练习[[blog/安全/靶机/hackmyvm_Decode\|hackmyvm_Decode]]（25.1.19）
++ 靶场练习[[blog/安全/靶机/hackmyvm_Decode\|hackmyvm_Decode]]（25.1.29）
 + 靶场练习 [[blog/安全/靶机/hackmyvm_p4l4nc4\|hackmyvm_p4l4nc4]]（25.1.28）
 + 靶场练习 [[blog/安全/靶机/hackmyvm_buster\|hackmyvm_buster]]（25.1.25）//再一次认识到自己的菜
 + 读书《月亮与六便士》（重温经典了属于是）
