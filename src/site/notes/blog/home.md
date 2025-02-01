@@ -6,7 +6,7 @@
 
 
 **最近在学**：
-+ 靶场练习[[blog/安全/靶机/hackmyvm_up\|hackmyvm_up]](25.1.31)
++ 靶场练习[[blog/安全/靶机/hackmyvm_up\|hackmyvm_up]] (25.1.31)
 + 靶场练习[[blog/安全/靶机/hackmyvm_jan\|hackmyvm_jan]] (25.1.31)
 + 靶场练习[[blog/安全/靶机/hackmyvm_Decode\|hackmyvm_Decode]]（25.1.29）
 + 靶场练习 [[blog/安全/靶机/hackmyvm_p4l4nc4\|hackmyvm_p4l4nc4]]（25.1.28）
