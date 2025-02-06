@@ -6,12 +6,8 @@
 
 
 **最近在学**：
-+ 靶场练习 [[blog/安全/靶机/Community_touch\|Community_touch]] (25.2.3)//群友制作的，质量很高
-+ 靶场练习 [[blog/安全/靶机/hackmyvm_icecream\|hackmyvm_icecream]]
-+ 靶场练习[[blog/安全/靶机/hackmyvm_up\|hackmyvm_up]] (25.1.31)
-+ 靶场练习[[blog/安全/靶机/hackmyvm_jan\|hackmyvm_jan]] (25.1.31)
-+ 读书《月亮与六便士》（重温经典了属于是）
-
++ 靶机练习 [[blog/安全/靶机/vulnxy_blogger\|vulnxy_blogger]]
++ 靶机练习 [[blog/安全/靶机/hackmyvm_atom\|hackmyvm_atom]]
 
 
 
