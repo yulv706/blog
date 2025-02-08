@@ -67,7 +67,7 @@ IP 注意不能是 localhost 或者 127.0.0.1 ，因为是 Docker 里。
 这里是大佬给的思路
 
 我在配置凭证的时候一直不成功，然后重装了一遍靶机就好了
-![NB`YJYSETZMO%J2(DIJUUJ.png](/img/user/picture/NB%60YJYSETZMO%25J2(DIJUUJ.png)
+![Pasted image 20250208221653.png](/img/user/picture/Pasted%20image%2020250208221653.png)
 
 
 ![Pasted image 20250208092934.png](/img/user/picture/Pasted%20image%2020250208092934.png)
