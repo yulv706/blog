@@ -13,6 +13,7 @@
 
 md，这个笔记系统出问题了，现在
 publish center加载不出来了，试了好多方法都不行，如果有懂哥希望可以教教我
+![Pasted image 20250208222828.png](/img/user/picture/Pasted%20image%2020250208222828.png)
 
 现在发布笔记只能一个一个发布
 目前有用的信息就只有：
