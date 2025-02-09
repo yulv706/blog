@@ -6,6 +6,7 @@
 
 
 **最近在学**：
++ 靶机练习 [[blog/安全/靶机/hackmyvm_visions\|hackmyvm_visions]] (2.9)
 + 靶机练习 [[blog/安全/靶机/hackmyvm_Observer\|hackmyvm_Observer]]
 + 靶机练习 [[blog/安全/靶机/hackmyvm_hero\|hackmyvm_hero]]
 + 靶机练习 [[blog/安全/靶机/vulnxy_blogger\|vulnxy_blogger]]
