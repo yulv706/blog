@@ -6,6 +6,7 @@
 
 
 **最近在学**：
++ 靶机联系 [[blog/安全/靶机/vulnhub_GaoKao\|vulnhub_GaoKao]] (2.9)
 + 靶机练习 [[blog/安全/靶机/hackmyvm_gifts\|hackmyvm_gifts]] (2.9)
 + 靶机练习 [[blog/安全/靶机/hackmyvm_visions\|hackmyvm_visions]] (2.9)
 + 靶机练习 [[blog/安全/靶机/hackmyvm_Observer\|hackmyvm_Observer]]
