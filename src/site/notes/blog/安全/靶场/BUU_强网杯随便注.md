@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/靶场/BUU_强网杯随便注.md","permalink":"/安全/靶场/BUU_强网杯随便注/","title":"BUU_强网杯随便注"}
+{"dg-publish":true,"title":"BUU_强网杯随便注","dg-path":"安全/靶场/BUU_强网杯随便注.md","permalink":"/安全/靶场/BUU_强网杯随便注/","dgPassFrontmatter":true}
 ---
 
 

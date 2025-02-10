@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/工具/Hydra_字典密码破解.md","permalink":"/安全/工具/Hydra_字典密码破解/","title":"Hydra_字典密码破解"}
+{"dg-publish":true,"title":"Hydra_字典密码破解","dg-path":"安全/工具/Hydra_字典密码破解.md","permalink":"/安全/工具/Hydra_字典密码破解/","dgPassFrontmatter":true}
 ---
 
 # 基本用法

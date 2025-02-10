@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/靶场/BUU_[安洵杯 2019]easy_serialize_php 1.md","permalink":"/安全/靶场/BUU_[安洵杯 2019]easy_serialize_php 1/","title":"BUU_[安洵杯 2019]easy_serialize_php 1"}
+{"dg-publish":true,"title":"BUU_[安洵杯 2019]easy_serialize_php 1","dg-path":"安全/靶场/BUU_[安洵杯 2019]easy_serialize_php 1.md","permalink":"/安全/靶场/BUU_[安洵杯 2019]easy_serialize_php 1/","dgPassFrontmatter":true}
 ---
 
 ```php

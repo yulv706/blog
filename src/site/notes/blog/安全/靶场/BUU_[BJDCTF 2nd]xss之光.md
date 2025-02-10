@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/靶场/BUU_[BJDCTF 2nd]xss之光.md","permalink":"/安全/靶场/BUU_[BJDCTF 2nd]xss之光/","title":"BUU_[BJDCTF 2nd]xss之光"}
+{"dg-publish":true,"title":"BUU_[BJDCTF 2nd]xss之光","dg-path":"安全/靶场/BUU_[BJDCTF 2nd]xss之光.md","permalink":"/安全/靶场/BUU_[BJDCTF 2nd]xss之光/","dgPassFrontmatter":true}
 ---
 
 进去发现就只有

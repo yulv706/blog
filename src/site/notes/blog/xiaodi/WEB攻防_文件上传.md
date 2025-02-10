@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"xiaodi/WEB攻防_文件上传.md","permalink":"/xiaodi/WEB攻防_文件上传/","title":"WEB攻防_文件上传"}
+{"dg-publish":true,"title":"WEB攻防_文件上传","dg-path":"xiaodi/WEB攻防_文件上传.md","permalink":"/xiaodi/WEB攻防_文件上传/","dgPassFrontmatter":true}
 ---
 
 

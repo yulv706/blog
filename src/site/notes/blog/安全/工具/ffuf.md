@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/工具/ffuf.md","permalink":"/安全/工具/ffuf/","title":"ffuf"}
+{"dg-publish":true,"title":"ffuf","dg-path":"安全/工具/ffuf.md","permalink":"/安全/工具/ffuf/","dgPassFrontmatter":true}
 ---
 
 **FFUF** 是一款用 Go 语言编写的快速、灵活的 Web 模糊测试工具，广泛用于渗透测试和漏洞挖掘。它通过自动化发送大量请求来探测 Web 应用中的隐藏路径、参数漏洞、子域名等，是安全研究人员和开发者的常用工具之一。

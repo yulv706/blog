@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/靶场/CTFshow_反序列化1.md","permalink":"/安全/靶场/CTFshow_反序列化1/","title":"CTFshow_反序列化1"}
+{"dg-publish":true,"title":"CTFshow_反序列化1","dg-path":"安全/靶场/CTFshow_反序列化1.md","permalink":"/安全/靶场/CTFshow_反序列化1/","dgPassFrontmatter":true}
 ---
 
 ```table-of-contents

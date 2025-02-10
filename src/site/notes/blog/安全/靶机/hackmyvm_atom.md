@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/靶机/hackmyvm_atom.md","permalink":"/安全/靶机/hackmyvm_atom/","title":"hackmyvm_atom","tags":["blog"]}
+{"dg-publish":true,"title":"hackmyvm_atom","tags":["blog"],"dg-path":"安全/靶机/hackmyvm_atom.md","permalink":"/安全/靶机/hackmyvm_atom/","dgPassFrontmatter":true}
 ---
 
 # 主机发现

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"xiaodi/WEB攻防_文件包含.md","permalink":"/xiaodi/WEB攻防_文件包含/","title":"WEB攻防_文件包含"}
+{"dg-publish":true,"title":"WEB攻防_文件包含","dg-path":"xiaodi/WEB攻防_文件包含.md","permalink":"/xiaodi/WEB攻防_文件包含/","dgPassFrontmatter":true}
 ---
 
 # 原理

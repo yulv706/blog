@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/靶机/hackmyvm_p4l4nc4.md","permalink":"/安全/靶机/hackmyvm_p4l4nc4/","title":"hackmyvm_p4l4nc4"}
+{"dg-publish":true,"title":"hackmyvm_p4l4nc4","dg-path":"安全/靶机/hackmyvm_p4l4nc4.md","permalink":"/安全/靶机/hackmyvm_p4l4nc4/","dgPassFrontmatter":true}
 ---
 
 # 主机发现

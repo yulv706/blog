@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/靶机/vulnhub_Prime1.md","permalink":"/安全/靶机/vulnhub_Prime1/","title":"vulnhub_Prime1"}
+{"dg-publish":true,"title":"vulnhub_Prime1","dg-path":"安全/靶机/vulnhub_Prime1.md","permalink":"/安全/靶机/vulnhub_Prime1/","dgPassFrontmatter":true}
 ---
 
 开放80端口

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"xiaodi/WEB攻防_XML&XXE安全.md","permalink":"/xiaodi/WEB攻防_XML&XXE安全/","title":"WEB攻防_XML&XXE安全"}
+{"dg-publish":true,"title":"WEB攻防_XML&XXE安全","dg-path":"xiaodi/WEB攻防_XML&XXE安全.md","permalink":"/xiaodi/WEB攻防_XML&XXE安全/","dgPassFrontmatter":true}
 ---
 
 # XML

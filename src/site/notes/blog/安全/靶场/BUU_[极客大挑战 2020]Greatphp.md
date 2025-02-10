@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/靶场/BUU_[极客大挑战 2020]Greatphp.md","permalink":"/安全/靶场/BUU_[极客大挑战 2020]Greatphp/","title":"BUU_[极客大挑战 2020]Greatphp"}
+{"dg-publish":true,"title":"BUU_[极客大挑战 2020]Greatphp","dg-path":"安全/靶场/BUU_[极客大挑战 2020]Greatphp.md","permalink":"/安全/靶场/BUU_[极客大挑战 2020]Greatphp/","dgPassFrontmatter":true}
 ---
 
 ```php

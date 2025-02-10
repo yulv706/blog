@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/靶场/自建环境_xss-labs.md","permalink":"/安全/靶场/自建环境_xss-labs/","title":"自建环境_xss-labs"}
+{"dg-publish":true,"title":"自建环境_xss-labs","dg-path":"安全/靶场/自建环境_xss-labs.md","permalink":"/安全/靶场/自建环境_xss-labs/","dgPassFrontmatter":true}
 ---
 
 

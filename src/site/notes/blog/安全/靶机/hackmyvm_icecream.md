@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/靶机/hackmyvm_icecream.md","permalink":"/安全/靶机/hackmyvm_icecream/","title":"hackmyvm_icecream","tags":["blog"]}
+{"dg-publish":true,"title":"hackmyvm_icecream","tags":["blog"],"dg-path":"安全/靶机/hackmyvm_icecream.md","permalink":"/安全/靶机/hackmyvm_icecream/","dgPassFrontmatter":true}
 ---
 
 # 主机发现

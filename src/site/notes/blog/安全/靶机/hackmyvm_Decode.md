@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/靶机/hackmyvm_Decode.md","permalink":"/安全/靶机/hackmyvm_Decode/","title":"hackmyvm_Decode"}
+{"dg-publish":true,"title":"hackmyvm_Decode","dg-path":"安全/靶机/hackmyvm_Decode.md","permalink":"/安全/靶机/hackmyvm_Decode/","dgPassFrontmatter":true}
 ---
 
 # 主机发现

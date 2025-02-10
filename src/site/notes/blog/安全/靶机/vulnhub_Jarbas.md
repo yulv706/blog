@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/靶机/vulnhub_Jarbas.md","permalink":"/安全/靶机/vulnhub_Jarbas/","title":"vulnhub_Jarbas"}
+{"dg-publish":true,"title":"vulnhub_Jarbas","dg-path":"安全/靶机/vulnhub_Jarbas.md","permalink":"/安全/靶机/vulnhub_Jarbas/","dgPassFrontmatter":true}
 ---
 
 ```table-of-contents

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/靶场/BUU_[极客大挑战 2019]PHP1.md","permalink":"/安全/靶场/BUU_[极客大挑战 2019]PHP1/","title":"BUU_[极客大挑战 2019]PHP1"}
+{"dg-publish":true,"title":"BUU_[极客大挑战 2019]PHP1","dg-path":"安全/靶场/BUU_[极客大挑战 2019]PHP1.md","permalink":"/安全/靶场/BUU_[极客大挑战 2019]PHP1/","dgPassFrontmatter":true}
 ---
 
 这一题的主要考点是**PHP反序列化**

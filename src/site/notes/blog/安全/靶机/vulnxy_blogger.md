@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/靶机/vulnxy_blogger.md","permalink":"/安全/靶机/vulnxy_blogger/","title":"vulnxy_blogger","tags":["blog"]}
+{"dg-publish":true,"title":"vulnxy_blogger","tags":["blog"],"dg-path":"安全/靶机/vulnxy_blogger.md","permalink":"/安全/靶机/vulnxy_blogger/","dgPassFrontmatter":true}
 ---
 
 # 主机发现

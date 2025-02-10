@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/靶场/BUU_[安洵杯 2019]iamthinking.md","permalink":"/安全/靶场/BUU_[安洵杯 2019]iamthinking/","title":"BUU_[安洵杯 2019]iamthinking"}
+{"dg-publish":true,"title":"BUU_[安洵杯 2019]iamthinking","dg-path":"安全/靶场/BUU_[安洵杯 2019]iamthinking.md","permalink":"/安全/靶场/BUU_[安洵杯 2019]iamthinking/","dgPassFrontmatter":true}
 ---
 
 利用dirsearch工具目录扫描发现网站源码：

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/靶场/墨者_XFF注入.md","permalink":"/安全/靶场/墨者_XFF注入/"}
+{"dg-publish":true,"title":null,"dg-path":"安全/靶场/墨者_XFF注入.md","permalink":"/安全/靶场/墨者_XFF注入/","dgPassFrontmatter":true}
 ---
 
 进去是一个登陆界面

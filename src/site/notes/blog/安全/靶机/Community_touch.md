@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/靶机/Community_touch.md","permalink":"/安全/靶机/Community_touch/","title":"Community_touch","tags":["blog"]}
+{"dg-publish":true,"title":"Community_touch","tags":["blog"],"dg-path":"安全/靶机/Community_touch.md","permalink":"/安全/靶机/Community_touch/","dgPassFrontmatter":true}
 ---
 
 # 主机发现

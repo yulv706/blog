@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"THM/Common LINUX提权.md","permalink":"/THM/Common LINUX提权/","title":"Common LINUX提权"}
+{"dg-publish":true,"title":"Common LINUX提权","dg-path":"THM/Common LINUX提权.md","permalink":"/THM/Common LINUX提权/","dgPassFrontmatter":true}
 ---
 
 # 两种提权类别

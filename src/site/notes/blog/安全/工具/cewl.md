@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/工具/cewl.md","permalink":"/安全/工具/cewl/","title":"cewl"}
+{"dg-publish":true,"title":"cewl","dg-path":"安全/工具/cewl.md","permalink":"/安全/工具/cewl/","dgPassFrontmatter":true}
 ---
 
 **CEWL（Custom Word List generator）** 是一款开源的命令行工具，主要用于通过爬取指定网站的内容来生成自定义的密码字典（单词列表）。它的核心功能是从网页中提取独特的单词和短语，帮助渗透测试人员或安全研究人员生成针对特定目标的密码字典，用于破解密码或其他安全测试。

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"xiaodi/WEB攻防_RCE.md","permalink":"/xiaodi/WEB攻防_RCE/","title":"WEB攻防_RCE"}
+{"dg-publish":true,"title":"WEB攻防_RCE","dg-path":"xiaodi/WEB攻防_RCE.md","permalink":"/xiaodi/WEB攻防_RCE/","dgPassFrontmatter":true}
 ---
 
 # 简单概述

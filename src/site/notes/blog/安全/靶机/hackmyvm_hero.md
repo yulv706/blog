@@ -2,8 +2,6 @@
 {"dg-publish":true,"title":"hackmyvm_hero","tags":["blog"],"dg-path":"安全/靶机/hackmyvm_hero.md","permalink":"/安全/靶机/hackmyvm_hero/","dgPassFrontmatter":true}
 ---
 
-```table-of-contents
-```
 # 主机发现
 
 ```sh

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/靶机/vulnhub_SickOS1.1.md","permalink":"/安全/靶机/vulnhub_SickOS1.1/","title":"vulnhub_SickOS1.1"}
+{"dg-publish":true,"title":"vulnhub_SickOS1.1","dg-path":"安全/靶机/vulnhub_SickOS1.1.md","permalink":"/安全/靶机/vulnhub_SickOS1.1/","dgPassFrontmatter":true}
 ---
 
 靶机ip

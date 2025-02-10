@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/靶场/自建环境_SQL报错盲注测试.md","permalink":"/安全/靶场/自建环境_SQL报错盲注测试/","title":"自建环境_SQL报错盲注测试"}
+{"dg-publish":true,"title":"自建环境_SQL报错盲注测试","dg-path":"安全/靶场/自建环境_SQL报错盲注测试.md","permalink":"/安全/靶场/自建环境_SQL报错盲注测试/","dgPassFrontmatter":true}
 ---
 
 # 环境介绍

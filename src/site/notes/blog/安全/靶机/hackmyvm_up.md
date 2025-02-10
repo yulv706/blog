@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/靶机/hackmyvm_up.md","permalink":"/安全/靶机/hackmyvm_up/","title":"hackmyvm_up","tags":["blog"]}
+{"dg-publish":true,"title":"hackmyvm_up","tags":["blog"],"dg-path":"安全/靶机/hackmyvm_up.md","permalink":"/安全/靶机/hackmyvm_up/","dgPassFrontmatter":true}
 ---
 
 # 主机发现

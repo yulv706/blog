@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/靶场/CTFshow_XSS_存储型.md","permalink":"/安全/靶场/CTFshow_XSS_存储型/","title":"CTFshow_XSS_存储型"}
+{"dg-publish":true,"title":"CTFshow_XSS_存储型","dg-path":"安全/靶场/CTFshow_XSS_存储型.md","permalink":"/安全/靶场/CTFshow_XSS_存储型/","dgPassFrontmatter":true}
 ---
 
 # WEB 327

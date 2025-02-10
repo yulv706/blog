@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"THM/netcat shell稳定.md","permalink":"/THM/netcat shell稳定/","title":"netcat shell稳定"}
+{"dg-publish":true,"title":"netcat shell稳定","dg-path":"THM/netcat shell稳定.md","permalink":"/THM/netcat shell稳定/","dgPassFrontmatter":true}
 ---
 
 # 前置知识

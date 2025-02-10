@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/靶机/hackmyvm_buster.md","permalink":"/安全/靶机/hackmyvm_buster/","title":"hackmyvm_buster"}
+{"dg-publish":true,"title":"hackmyvm_buster","dg-path":"安全/靶机/hackmyvm_buster.md","permalink":"/安全/靶机/hackmyvm_buster/","dgPassFrontmatter":true}
 ---
 
 # 主机发现

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/靶机/vulnhub_W1R3S 1.0.1.md","permalink":"/安全/靶机/vulnhub_W1R3S 1.0.1/","title":"vulnhub_W1R3S 1.0.1"}
+{"dg-publish":true,"title":"vulnhub_W1R3S 1.0.1","dg-path":"安全/靶机/vulnhub_W1R3S 1.0.1.md","permalink":"/安全/靶机/vulnhub_W1R3S 1.0.1/","dgPassFrontmatter":true}
 ---
 
 # 主机扫描

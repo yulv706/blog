@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"THM/linux提权.md","permalink":"/THM/linux提权/","title":"linux提权"}
+{"dg-publish":true,"title":"linux提权","dg-path":"THM/linux提权.md","permalink":"/THM/linux提权/","dgPassFrontmatter":true}
 ---
 
 # 枚举

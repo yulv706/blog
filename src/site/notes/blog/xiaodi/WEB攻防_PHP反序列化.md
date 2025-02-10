@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"xiaodi/WEB攻防_PHP反序列化.md","permalink":"/xiaodi/WEB攻防_PHP反序列化/","title":"WEB攻防_PHP反序列化"}
+{"dg-publish":true,"title":"WEB攻防_PHP反序列化","dg-path":"xiaodi/WEB攻防_PHP反序列化.md","permalink":"/xiaodi/WEB攻防_PHP反序列化/","dgPassFrontmatter":true}
 ---
 
 # 什么是序列化

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"THM/windows提权.md","permalink":"/THM/windows提权/","title":"windows提权"}
+{"dg-publish":true,"title":"windows提权","dg-path":"THM/windows提权.md","permalink":"/THM/windows提权/","dgPassFrontmatter":true}
 ---
 
 ```table-of-contents

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/靶场/CTFshow_月饼杯_web1_此夜圆.md","permalink":"/安全/靶场/CTFshow_月饼杯_web1_此夜圆/","title":"CTFshow_月饼杯_web1_此夜圆"}
+{"dg-publish":true,"title":"CTFshow_月饼杯_web1_此夜圆","dg-path":"安全/靶场/CTFshow_月饼杯_web1_此夜圆.md","permalink":"/安全/靶场/CTFshow_月饼杯_web1_此夜圆/","dgPassFrontmatter":true}
 ---
 
 ```php

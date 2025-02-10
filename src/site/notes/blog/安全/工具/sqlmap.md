@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/工具/sqlmap.md","permalink":"/安全/工具/sqlmap/","title":"sqlmap"}
+{"dg-publish":true,"title":"sqlmap","dg-path":"安全/工具/sqlmap.md","permalink":"/安全/工具/sqlmap/","dgPassFrontmatter":true}
 ---
 
 > 本文由 [简悦 SimpRead](http://ksria.com/simpread/) 转码， 原文地址 [www.anquanke.com](https://www.anquanke.com/post/id/235846)

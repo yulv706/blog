@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"安全/靶场/BUU_[ACTF2020 新生赛]BackupFile 1.md","permalink":"/安全/靶场/BUU_[ACTF2020 新生赛]BackupFile 1/","title":"BUU_[ACTF2020 新生赛]BackupFile 1"}
+{"dg-publish":true,"title":"BUU_[ACTF2020 新生赛]BackupFile 1","dg-path":"安全/靶场/BUU_[ACTF2020 新生赛]BackupFile 1.md","permalink":"/安全/靶场/BUU_[ACTF2020 新生赛]BackupFile 1/","dgPassFrontmatter":true}
 ---
 
 ![Pasted image 20240809161546.png](/img/user/picture/Pasted%20image%2020240809161546.png)
