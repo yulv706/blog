@@ -26,4 +26,12 @@ https://github.com/oleeskild/obsidian-digital-garden/issues/376
 求救贴发了：
 https://forum-zh.obsidian.md/t/topic/46161
 
+**后续：**
+
+这个好像确实是个小bug，反馈了之后插件作者也是很快就修复了
+
+https://github.com/oleeskild/obsidian-digital-garden/issues/578
+
+很厉害很厉害
+
 
