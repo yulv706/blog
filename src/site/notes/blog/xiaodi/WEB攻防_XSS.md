@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"xiaodi/WEB攻防_XSS.md","permalink":"/xiaodi/WEB攻防_XSS/","title":"WEB攻防_XSS"}
+{"dg-publish":true,"title":"WEB攻防_XSS","dg-path":"xiaodi/WEB攻防_XSS.md","permalink":"/xiaodi/WEB攻防_XSS/","dgPassFrontmatter":true}
 ---
 
 
