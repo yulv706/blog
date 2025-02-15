@@ -6,6 +6,7 @@
 
 
 **最近在学**：
++ 靶机练习 [[blog/安全/靶机/Community_umz\|Community_umz]] (2.15) //体量小，eazy
 + 靶机练习 [[blog/安全/靶机/hackmyvm_Publisher\|hackmyvm_Publisher]] (2.13)//感觉这个提权部分有点难，改天还得研究一下
 + 靶机练习 [[blog/安全/靶机/hackmyvm_canto\|hackmyvm_canto]] (2.13)//开学了，好累，不想上学
 + 靶机联系 [[blog/安全/靶机/vulnhub_GaoKao\|vulnhub_GaoKao]] (2.9)
