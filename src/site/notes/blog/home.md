@@ -6,6 +6,7 @@
 
 
 **最近在学**：
++ 靶机练习 [[blog/安全/靶机/Community_he110wor1d\|Community_he110wor1d]] //很不错
 + 靶机练习 [[blog/安全/靶机/hackmyvm_Convert\|hackmyvm_Convert]]
 + 靶机练习 [[blog/安全/靶机/hackmyvm_Slackware\|hackmyvm_Slackware]] //找找找，猜猜猜，菜菜菜
 + 靶机练习 [[blog/安全/靶机/hackmyvm_Chromatica\|hackmyvm_Chromatica]] //提权部分简单，但前面不简单
