@@ -2,9 +2,6 @@
 {"dg-publish":true,"dg-home":true,"dg-path":"home.md","permalink":"/home/","tags":["gardenEntry"],"dgPassFrontmatter":true}
 ---
 
-本人菜鸡，而且很懒，只想摆烂
-
-
 **最近在学**：
 + 靶机练习 [[blog/安全/靶机/Community_he110wor1d\|Community_he110wor1d]] //很不错
 + 靶机练习 [[blog/安全/靶机/hackmyvm_Convert\|hackmyvm_Convert]]
